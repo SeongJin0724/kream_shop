@@ -1,0 +1,66 @@
+.product_wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
+  .product_title {
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .product_sub_title {
+    color: rgba(34, 34, 34, 0.5);
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  .product_inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .product_card {
+      width: 100%;
+      max-width: 19%;
+      margin-top: 20px;
+      .brandName {
+        color: #222;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        height: 17px;
+        line-height: 17px;
+        max-width: 100%;
+        overflow: hidden;
+        padding-bottom: 2px;
+        text-overflow: ellipsis;
+        vertical-align: top;
+        white-space: nowrap;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+      }
+      .productName {
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        color: #222;
+        display: -webkit-box;
+        font-size: 14px;
+        line-height: 16px;
+        max-height: 34px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+      }
+      .price {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.04px;
+        line-height: 17px;
+        vertical-align: top;
+        margin-top: 10px;
+      }
+    }
+  }
+}
